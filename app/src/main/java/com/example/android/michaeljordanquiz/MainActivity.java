@@ -185,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()){
             case R.id.yes:
                 if (checked){
-                    Toast.makeText(this, "I'm glad you enjoyed my quiz", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "I'm glad you enjoyed my quiz!", Toast.LENGTH_SHORT).show();
                 }
                 break;
             case R.id.no:
