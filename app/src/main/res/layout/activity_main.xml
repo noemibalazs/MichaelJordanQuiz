@@ -20,7 +20,7 @@
 
         <EditText
             android:id="@+id/name_of_player"
-            android:hint="Name"
+            android:hint="Quiz player's name"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="10dp"
             android:inputType="textCapWords"
@@ -57,21 +57,21 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/answer_1962"
+                    android:id="@+id/rb_answer_1962"
                     android:text="1962"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <RadioButton
-                    android:id="@+id/answer_1963"
+                    android:id="@+id/rb_answer_1963"
                     android:text="1963"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <RadioButton
-                    android:id="@+id/answer_1964"
+                    android:id="@+id/rb_answer_1964"
                     android:text="1964"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
@@ -110,21 +110,21 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/answer_1984"
+                    android:id="@+id/rb_answer_1984"
                     android:text="1984"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <RadioButton
-                    android:id="@+id/answer_1985"
+                    android:id="@+id/rb_answer_1985"
                     android:text="1985"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <RadioButton
-                    android:id="@+id/answer_1986"
+                    android:id="@+id/rb_answer_1986"
                     android:text="1986"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
@@ -167,21 +167,21 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/answer_hornets"
+                    android:id="@+id/rb_answer_hornets"
                     android:text="Charlotte Hornets"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <RadioButton
-                    android:id="@+id/answer_grizzlies"
+                    android:id="@+id/rb_answer_grizzlies"
                     android:text="Memphis Grizzlies"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <RadioButton
-                    android:id="@+id/answer_bucks"
+                    android:id="@+id/rb_answer_bucks"
                     android:text="Milwaukee Bucks"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
@@ -223,21 +223,21 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/answer_james"
+                    android:id="@+id/rb_answer_james"
                     android:text="James"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <RadioButton
-                    android:id="@+id/answer_jeffrey"
+                    android:id="@+id/rb_answer_jeffrey"
                     android:text="Jeffrey"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <RadioButton
-                    android:id="@+id/answer_john"
+                    android:id="@+id/rb_answer_john"
                     android:text="John"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
@@ -278,21 +278,21 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/answer_one"
+                    android:id="@+id/rb_answer_one"
                     android:text="One"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <RadioButton
-                    android:id="@+id/answer_two"
+                    android:id="@+id/rb_answer_two"
                     android:text="Two"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <RadioButton
-                    android:id="@+id/answer_three"
+                    android:id="@+id/rb_answer_three"
                     android:text="Three"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
@@ -333,21 +333,21 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/answer_four"
+                    android:id="@+id/rb_answer_four"
                     android:text="Four"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <RadioButton
-                    android:id="@+id/answer_six"
+                    android:id="@+id/rb_answer_six"
                     android:text="Six"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <RadioButton
-                    android:id="@+id/answer_eight"
+                    android:id="@+id/rb_answer_eight"
                     android:text="Eight"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
@@ -389,21 +389,21 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/answer_28485"
+                    android:id="@+id/rb_answer_28485"
                     android:text="28485"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <RadioButton
-                    android:id="@+id/answer_30763"
+                    android:id="@+id/rb_answer_30763"
                     android:text="30763"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <RadioButton
-                    android:id="@+id/answer_32292"
+                    android:id="@+id/rb_answer_32292"
                     android:text="32292"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
@@ -444,21 +444,21 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/answer_adidas"
+                    android:id="@+id/rb_answer_adidas"
                     android:text="Adidas"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <RadioButton
-                    android:id="@+id/answer_nike"
+                    android:id="@+id/rb_answer_nike"
                     android:text="Nike"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <RadioButton
-                    android:id="@+id/answer_converse"
+                    android:id="@+id/rb_answer_converse"
                     android:text="Converse"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
@@ -499,21 +499,21 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/answer_67"
+                    android:id="@+id/rb_answer_67"
                     android:text="67"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <RadioButton
-                    android:id="@+id/answer_68"
+                    android:id="@+id/rb_answer_68"
                     android:text="68"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <RadioButton
-                    android:id="@+id/answer_69"
+                    android:id="@+id/rb_answer_69"
                     android:text="69"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
@@ -544,6 +544,7 @@
             android:text="Yes"
             android:textStyle="bold"
             android:textSize="16sp"
+            android:onClick="onPressed"
             android:paddingLeft="8dp"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="145dp"
@@ -555,6 +556,7 @@
             android:text="No"
             android:textStyle="bold"
             android:textSize="16sp"
+            android:onClick="onPressed"
             android:paddingLeft="8dp"
             android:layout_marginLeft="145dp"
             android:layout_width="wrap_content"
@@ -574,7 +576,7 @@
             android:id="@+id/submit"
             android:text="Submit"
             android:textStyle="bold"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:background="#E91E63"
             android:layout_marginTop="20dp"
             android:layout_gravity="center_horizontal"
