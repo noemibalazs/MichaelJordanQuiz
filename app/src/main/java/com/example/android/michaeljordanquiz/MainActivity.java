@@ -1,10 +1,8 @@
 package com.example.android.michaeljordanquiz;
 
-import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.accessibility.AccessibilityManager;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
@@ -20,30 +18,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       final CheckBox yes = (CheckBox) findViewById(R.id.yes);
-       final CheckBox no = (CheckBox) findViewById(R.id.no);
-
-        yes.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                yes.setChecked(isChecked);
-                no.setChecked(false);
-            }
-        });
-
-        no.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                no.setChecked(isChecked);
-                yes.setChecked(false);
-            }
-        });
     }
 
     public void submitQuiz (final View view) {
-
-        EditText eText = (EditText)findViewById(R.id.name_of_player);
-        String nameOfQuizPlayer = eText.getText().toString();
 
         RatingBar ratingBarJordan = (RatingBar) findViewById(R.id.ratting_bar);
         String numberOfRatings = "Thank you for your evaluation. Rating: " + ratingBarJordan.getRating();
@@ -131,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
         boolean answerCorrect69 = radioButton69.isChecked();
 
         int cAnswer = calculateCorrectAnswers(answerWrong1962, answerCorrect1963, answerWrong1964, answerCorrect1984, answerWrong1985, answerWrong1986, answerCorrectHornets, answerWrongGrizzlies, answerWrongBucks, answerWrongJames, answerCorrectJeffrey, answerWrongJohn, answerWrongFour, answerCorrectSix, answerWrongEight, answerWrongOne, answerCorrectTwo, answerWrongThree, answerWrong28485, answerWrong30763, answerCorrect32292, answerWrongAdidas, answerCorrectNike, answerWrongConverse, answerWrong67, answerWrong68, answerCorrect69);
-        String answerQuizPlayer = finalAnswerForQuizPlayer(cAnswer, nameOfQuizPlayer);
+        String answerQuizPlayer = finalAnswerForQuizPlayer(cAnswer);
         displayAnswer(answerQuizPlayer);
     }
 
@@ -170,8 +147,8 @@ public class MainActivity extends AppCompatActivity {
         return correctAnswer;
     }
 
-    public String finalAnswerForQuizPlayer (int correctAnswer, String nameOfQuizPlayer){
-        String answer = "Congratulation "+ nameOfQuizPlayer + "! " + correctAnswer + " out of 9!";
+    public String finalAnswerForQuizPlayer (int correctAnswer){
+        String answer = "Congratulation! "+ correctAnswer + " out of 9!";
         return answer;
     }
 
@@ -183,14 +160,14 @@ public class MainActivity extends AppCompatActivity {
     public void onPressed(View view){
         boolean checked = ((CheckBox) view).isChecked();
         switch (view.getId()){
-            case R.id.yes:
+            case R.id.amazing:
                 if (checked){
                     Toast.makeText(this, "I'm glad you enjoyed my quiz!", Toast.LENGTH_SHORT).show();
                 }
                 break;
-            case R.id.no:
+            case R.id.great:
                 if (checked){
-                    Toast.makeText(this, "I'm sorry! Probably you have very high expectations!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Thank you! Again!", Toast.LENGTH_SHORT).show();
                 }
                 break;
         }
