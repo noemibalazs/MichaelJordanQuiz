@@ -120,8 +120,6 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkBoxRonaldo = (CheckBox) findViewById(R.id.rb_answer_rn);
         boolean answerCorrectR = checkBoxRonaldo.isChecked();
 
-
-
         int cAnswer = calculateCorrectAnswers(answerWrong1962, answerCorrect1963, answerWrong1964,
                 answerCorrect1984, answerWrong1985, answerWrong1986,
                 answerCorrectHornets, answerWrongGrizzlies, answerWrongBucks,
@@ -180,12 +178,10 @@ public class MainActivity extends AppCompatActivity {
         return correctAnswer;
     }
 
-
     public String finalAnswerForQuizPlayer (int correctAnswer, String nameOfQuizPlayer){
         String answer = "Congratulation "+ nameOfQuizPlayer + "! " + correctAnswer + " out of 9!";
         return answer;
     }
-
 
     public void displayAnswer (String answer){
         TextView yourScore = (TextView) findViewById(R.id.your_score);
