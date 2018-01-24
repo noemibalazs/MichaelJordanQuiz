@@ -18,6 +18,16 @@
             android:layout_height="242dp"
             android:src="@drawable/jordan" />
 
+        <EditText
+            android:id="@+id/name_of_player"
+            android:hint="Quiz player's name"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textCapWords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -418,7 +428,7 @@
 
             <TextView
                 android:id="@+id/eigth_question"
-                android:text="Which shoe company began producing Air Jordans in 1985?"
+                android:text="In which professional league did he play?"
                 style="@style/question_view" />
 
         </LinearLayout>
@@ -429,34 +439,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <RadioGroup
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <RadioButton
-                    android:id="@+id/rb_answer_adidas"
-                    android:text="Adidas"
+                <EditText
+                    android:id="@+id/rb_answer_nba"
+                    android:hint="Just three letter of acronym"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-
-                <RadioButton
-                    android:id="@+id/rb_answer_nike"
-                    android:text="Nike"
-                    android:textAppearance="?android:textAppearanceSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <RadioButton
-                    android:id="@+id/rb_answer_converse"
-                    android:text="Converse"
-                    android:textAppearance="?android:textAppearanceSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-
-            </RadioGroup>
 
         </LinearLayout>
 
@@ -473,7 +461,7 @@
 
             <TextView
                 android:id="@+id/nineth_question"
-                android:text="What is Jordan's record for points scored in a single game?"
+                android:text="Which of the famous athletes are not basketball players?"
                 style="@style/question_view" />
 
         </LinearLayout>
@@ -489,23 +477,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <RadioButton
-                    android:id="@+id/rb_answer_67"
-                    android:text="67"
+                <CheckBox
+                    android:id="@+id/rb_answer_sch"
+                    android:text="Michael Schumacher"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
-                <RadioButton
-                    android:id="@+id/rb_answer_68"
-                    android:text="68"
-                    android:textAppearance="?android:textAppearanceSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <RadioButton
-                    android:id="@+id/rb_answer_69"
-                    android:text="69"
+                <CheckBox
+                    android:id="@+id/rb_answer_rn"
+                    android:text="Ronaldo"
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -531,8 +512,8 @@
             android:layout_height="wrap_content" />
 
         <CheckBox
-            android:id="@+id/amazing"
-            android:text="Amazing"
+            android:id="@+id/yes"
+            android:text="Yes"
             android:textStyle="bold"
             android:textSize="16sp"
             android:onClick="onPressed"
@@ -543,8 +524,8 @@
             android:layout_height="wrap_content" />
 
         <CheckBox
-            android:id="@+id/great"
-            android:text="Great"
+            android:id="@+id/no"
+            android:text="No"
             android:textStyle="bold"
             android:textSize="16sp"
             android:onClick="onPressed"

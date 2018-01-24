@@ -18,9 +18,30 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        final CheckBox yes = (CheckBox) findViewById(R.id.yes);
+        final CheckBox no = (CheckBox) findViewById(R.id.no);
+
+        yes.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                yes.setChecked(isChecked);
+                no.setChecked(false);
+            }
+        });
+
+        no.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                no.setChecked(isChecked);
+                yes.setChecked(false);
+            }
+        });
     }
 
     public void submitQuiz (final View view) {
+
+        EditText eText = (EditText)findViewById(R.id.name_of_player);
+        String nameOfQuizPlayer = eText.getText().toString();
 
         RatingBar ratingBarJordan = (RatingBar) findViewById(R.id.ratting_bar);
         String numberOfRatings = "Thank you for your evaluation. Rating: " + ratingBarJordan.getRating();
@@ -89,31 +110,49 @@ public class MainActivity extends AppCompatActivity {
         RadioButton radioButton32292 = (RadioButton) findViewById(R.id.rb_answer_32292);
         boolean answerCorrect32292 = radioButton32292.isChecked();
 
-        RadioButton radioButtonAdidas = (RadioButton)findViewById(R.id.rb_answer_adidas);
-        boolean answerWrongAdidas = radioButtonAdidas.isChecked();
+        EditText editTextNba = (EditText) findViewById(R.id.rb_answer_nba);
+        String nbaQ = editTextNba.getText().toString();
+        boolean answerCorrectNba = nbaQ.contains("nba")|| nbaQ.contains("NBA");
 
-        RadioButton radioButtonNike = (RadioButton) findViewById(R.id.rb_answer_nike);
-        boolean answerCorrectNike = radioButtonNike.isChecked();
+        CheckBox checkBoxSch = (CheckBox) findViewById(R.id.rb_answer_sch);
+        boolean answerCorrectSch= checkBoxSch.isChecked();
 
-        RadioButton radioButtonConverse = (RadioButton) findViewById(R.id.rb_answer_converse);
-        boolean answerWrongConverse = radioButtonConverse.isChecked();
+        CheckBox checkBoxRonaldo = (CheckBox) findViewById(R.id.rb_answer_rn);
+        boolean answerCorrectR = checkBoxRonaldo.isChecked();
 
-        RadioButton radioButton67 = (RadioButton) findViewById(R.id.rb_answer_67);
-        boolean answerWrong67 = radioButton67.isChecked();
 
-        RadioButton radioButton68 = (RadioButton) findViewById(R.id.rb_answer_68);
-        boolean answerWrong68 = radioButton68.isChecked();
 
-        RadioButton radioButton69 = (RadioButton) findViewById(R.id.rb_answer_69);
-        boolean answerCorrect69 = radioButton69.isChecked();
+        int cAnswer = calculateCorrectAnswers(answerWrong1962, answerCorrect1963, answerWrong1964,
+                answerCorrect1984, answerWrong1985, answerWrong1986,
+                answerCorrectHornets, answerWrongGrizzlies, answerWrongBucks,
+                answerWrongJames, answerCorrectJeffrey, answerWrongJohn,
+                answerWrongFour, answerCorrectSix, answerWrongEight,
+                answerWrongOne, answerCorrectTwo, answerWrongThree,
+                answerWrong28485, answerWrong30763, answerCorrect32292,
+                answerCorrectNba,
+                answerCorrectSch, answerCorrectR);
 
-        int cAnswer = calculateCorrectAnswers(answerWrong1962, answerCorrect1963, answerWrong1964, answerCorrect1984, answerWrong1985, answerWrong1986, answerCorrectHornets, answerWrongGrizzlies, answerWrongBucks, answerWrongJames, answerCorrectJeffrey, answerWrongJohn, answerWrongFour, answerCorrectSix, answerWrongEight, answerWrongOne, answerCorrectTwo, answerWrongThree, answerWrong28485, answerWrong30763, answerCorrect32292, answerWrongAdidas, answerCorrectNike, answerWrongConverse, answerWrong67, answerWrong68, answerCorrect69);
-        String answerQuizPlayer = finalAnswerForQuizPlayer(cAnswer);
+        String answerQuizPlayer = finalAnswerForQuizPlayer(cAnswer, nameOfQuizPlayer);
         displayAnswer(answerQuizPlayer);
     }
 
-    private int calculateCorrectAnswers (boolean addWrong1962, boolean addCorrect1963, boolean addWrong1964, boolean addCorrect1984, boolean addWrong1985, boolean addWrong1986, boolean addCorrectHornets, boolean addWrongGrizzlies, boolean addWrongBucks, boolean addWrongJames, boolean addCorrectJeffrey, boolean addWrongJohn, boolean addWrongOne, boolean addCorrectTwo, boolean addWrongThree ,boolean addWrongFour, boolean addCorrectSix, boolean addWrongEight, boolean addWrong28485, boolean addWrong30763, boolean addCorrect32292, boolean addWrongAdidas, boolean addCorrectNike, boolean addWrongConverse, boolean addWrong67, boolean addWrong68, boolean addCorrect69){
+    private int calculateCorrectAnswers (boolean addWrong1962, boolean addCorrect1963, boolean addWrong1964,
+                                         boolean addCorrect1984, boolean addWrong1985, boolean addWrong1986,
+                                         boolean addCorrectHornets, boolean addWrongGrizzlies, boolean addWrongBucks,
+                                         boolean addWrongJames, boolean addCorrectJeffrey, boolean addWrongJohn,
+                                         boolean addWrongOne, boolean addCorrectTwo, boolean addWrongThree,
+                                         boolean addWrongFour, boolean addCorrectSix, boolean addWrongEight,
+                                         boolean addWrong28485, boolean addWrong30763, boolean addCorrect32292,
+                                         boolean addCorrectNba,
+                                         boolean addCorrectSch, boolean addCorrectR){
         int correctAnswer = 0;
+
+        if(addCorrectR && addCorrectSch){
+            correctAnswer += 1;
+        }
+        if (addCorrectNba){
+            correctAnswer += 1;
+        }
         if(addCorrect1963){
             correctAnswer += 1;
         }
@@ -132,13 +171,7 @@ public class MainActivity extends AppCompatActivity {
         if(addCorrectSix){
             correctAnswer += 1;
         }
-        if(addCorrect32292){
-            correctAnswer += 1;
-        }
-        if(addCorrectNike){
-            correctAnswer += 1;
-        }
-        if(addCorrect69){
+        if (addCorrect32292){
             correctAnswer += 1;
         }
         else {
@@ -147,10 +180,12 @@ public class MainActivity extends AppCompatActivity {
         return correctAnswer;
     }
 
-    public String finalAnswerForQuizPlayer (int correctAnswer){
-        String answer = "Congratulation! "+ correctAnswer + " out of 9!";
+
+    public String finalAnswerForQuizPlayer (int correctAnswer, String nameOfQuizPlayer){
+        String answer = "Congratulation "+ nameOfQuizPlayer + "! " + correctAnswer + " out of 9!";
         return answer;
     }
+
 
     public void displayAnswer (String answer){
         TextView yourScore = (TextView) findViewById(R.id.your_score);
@@ -160,14 +195,14 @@ public class MainActivity extends AppCompatActivity {
     public void onPressed(View view){
         boolean checked = ((CheckBox) view).isChecked();
         switch (view.getId()){
-            case R.id.amazing:
+            case R.id.yes:
                 if (checked){
                     Toast.makeText(this, "I'm glad you enjoyed my quiz!", Toast.LENGTH_SHORT).show();
                 }
                 break;
-            case R.id.great:
+            case R.id.no:
                 if (checked){
-                    Toast.makeText(this, "Thank you! Again!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "I'm sorry! Probably you have very high expectations!", Toast.LENGTH_SHORT).show();
                 }
                 break;
         }
