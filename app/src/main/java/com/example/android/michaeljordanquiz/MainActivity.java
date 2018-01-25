@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
         EditText editTextNba = (EditText) findViewById(R.id.rb_answer_nba);
         String nbaQ = editTextNba.getText().toString();
-        boolean answerCorrectNba = nbaQ.contains("nba")|| nbaQ.contains("NBA");
+        boolean answerCorrectNba = nbaQ.equalsIgnoreCase("nba");
 
         CheckBox checkBoxSch = (CheckBox) findViewById(R.id.rb_answer_sch);
         boolean answerCorrectSch= checkBoxSch.isChecked();
