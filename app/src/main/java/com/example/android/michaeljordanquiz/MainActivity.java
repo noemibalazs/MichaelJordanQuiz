@@ -47,65 +47,23 @@ public class MainActivity extends AppCompatActivity {
         String numberOfRatings = "Thank you for your evaluation. Rating: " + ratingBarJordan.getRating();
         Toast.makeText(this,numberOfRatings,Toast.LENGTH_SHORT).show();
 
-        RadioButton radioButton1962 = (RadioButton) findViewById(R.id.rb_answer_1962);
-        boolean answerWrong1962 = radioButton1962.isChecked();
-
         RadioButton radioButton1963 = (RadioButton) findViewById(R.id.rb_answer_1963);
         boolean answerCorrect1963 = radioButton1963.isChecked();
-
-        RadioButton radioButton1964 = (RadioButton) findViewById(R.id.rb_answer_1964);
-        boolean answerWrong1964 = radioButton1964.isChecked();
 
         RadioButton radioButton1984 = (RadioButton) findViewById(R.id.rb_answer_1984);
         boolean answerCorrect1984 = radioButton1984.isChecked();
 
-        RadioButton radioButton1885 = (RadioButton) findViewById(R.id.rb_answer_1985);
-        boolean answerWrong1985 =radioButton1885.isChecked();
-
-        RadioButton radioButton1986 = (RadioButton) findViewById(R.id.rb_answer_1986);
-        boolean answerWrong1986 = radioButton1986.isChecked();
-
         RadioButton radioButtonHornets = (RadioButton) findViewById(R.id.rb_answer_hornets);
         boolean answerCorrectHornets = radioButtonHornets.isChecked();
-
-        RadioButton radioButtonGrizzlies = (RadioButton) findViewById(R.id.rb_answer_grizzlies);
-        boolean answerWrongGrizzlies = radioButtonGrizzlies.isChecked();
-
-        RadioButton radioButtonBucks = (RadioButton) findViewById(R.id.rb_answer_bucks);
-        boolean answerWrongBucks = radioButtonBucks.isChecked();
-
-        RadioButton radioButtonJames = (RadioButton) findViewById(R.id.rb_answer_james);
-        boolean answerWrongJames = radioButtonJames.isChecked();
 
         RadioButton radioButtonJeffrey = (RadioButton) findViewById(R.id.rb_answer_jeffrey);
         boolean answerCorrectJeffrey = radioButtonJeffrey.isChecked();
 
-        RadioButton radioButtonJohn = (RadioButton) findViewById(R.id.rb_answer_john);
-        boolean answerWrongJohn = radioButtonJohn.isChecked();
-
-        RadioButton radioButtonOne = (RadioButton) findViewById(R.id.rb_answer_one);
-        boolean answerWrongOne = radioButtonOne.isChecked();
-
         RadioButton radioButtonTwo = (RadioButton) findViewById(R.id.rb_answer_two);
         boolean answerCorrectTwo = radioButtonTwo.isChecked();
 
-        RadioButton radioButtonThree = (RadioButton) findViewById(R.id.rb_answer_three);
-        boolean answerWrongThree = radioButtonThree.isChecked();
-
-        RadioButton radioButtonFour = (RadioButton) findViewById(R.id.rb_answer_four);
-        boolean answerWrongFour = radioButtonFour.isChecked();
-
         RadioButton radioButtonSix = (RadioButton) findViewById(R.id.rb_answer_six);
         boolean answerCorrectSix = radioButtonSix.isChecked();
-
-        RadioButton radioButtonEight = (RadioButton) findViewById(R.id.rb_answer_eight);
-        boolean answerWrongEight = radioButtonEight.isChecked();
-
-        RadioButton radioButton28485 = (RadioButton) findViewById(R.id.rb_answer_28485);
-        boolean answerWrong28485 = radioButton28485.isChecked();
-
-        RadioButton radioButton30763 = (RadioButton) findViewById(R.id.rb_answer_30763);
-        boolean answerWrong30763 = radioButton30763.isChecked();
 
         RadioButton radioButton32292 = (RadioButton) findViewById(R.id.rb_answer_32292);
         boolean answerCorrect32292 = radioButton32292.isChecked();

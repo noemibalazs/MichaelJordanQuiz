@@ -41,7 +41,7 @@
                 android:text="What year was Michael Jordan born?"
                 style="@style/question_view"/>
 
-    </LinearLayout>
+         </LinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
