@@ -27,7 +27,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -42,9 +41,7 @@
                 android:text="What year was Michael Jordan born?"
                 style="@style/question_view"/>
 
-
     </LinearLayout>
-
 
         <LinearLayout
             android:orientation="vertical"
@@ -77,7 +74,6 @@
                     android:textAppearance="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-
 
             </RadioGroup>
 
@@ -131,13 +127,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
-
             </RadioGroup>
 
         </LinearLayout>
-
-
-
 
         <LinearLayout
             android:orientation="horizontal"
@@ -152,7 +144,6 @@
                 android:id="@+id/third_question"
                 android:text="What NBA team does Jordan currently own?"
                 style="@style/question_view" />
-
 
         </LinearLayout>
 
@@ -188,13 +179,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
-
             </RadioGroup>
 
         </LinearLayout>
-
-
-
 
         <LinearLayout
             android:orientation="horizontal"
@@ -244,12 +231,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
-
             </RadioGroup>
 
         </LinearLayout>
-
-
 
         <LinearLayout
             android:orientation="horizontal"
@@ -299,12 +283,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
-
             </RadioGroup>
 
         </LinearLayout>
-
-
 
         <LinearLayout
             android:orientation="horizontal"
@@ -354,13 +335,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
-
             </RadioGroup>
 
         </LinearLayout>
-
-
-
 
         <LinearLayout
             android:orientation="horizontal"
@@ -410,12 +387,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
-
             </RadioGroup>
 
         </LinearLayout>
-
-
 
         <LinearLayout
             android:orientation="horizontal"
@@ -447,8 +421,6 @@
                     android:layout_height="wrap_content" />
 
         </LinearLayout>
-
-
 
         <LinearLayout
             android:orientation="horizontal"
@@ -491,12 +463,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
-
             </RadioGroup>
 
         </LinearLayout>
-
-
 
         <TextView
             android:id="@+id/feedback"
@@ -568,9 +537,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-
     </LinearLayout>
-
-
 
 </ScrollView>

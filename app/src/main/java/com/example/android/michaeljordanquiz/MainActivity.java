@@ -120,27 +120,21 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkBoxRonaldo = (CheckBox) findViewById(R.id.rb_answer_rn);
         boolean answerCorrectR = checkBoxRonaldo.isChecked();
 
-        int cAnswer = calculateCorrectAnswers(answerWrong1962, answerCorrect1963, answerWrong1964,
-                answerCorrect1984, answerWrong1985, answerWrong1986,
-                answerCorrectHornets, answerWrongGrizzlies, answerWrongBucks,
-                answerWrongJames, answerCorrectJeffrey, answerWrongJohn,
-                answerWrongFour, answerCorrectSix, answerWrongEight,
-                answerWrongOne, answerCorrectTwo, answerWrongThree,
-                answerWrong28485, answerWrong30763, answerCorrect32292,
+        int cAnswer = calculateCorrectAnswers( answerCorrect1963,
+                answerCorrect1984, answerCorrectHornets,
+                answerCorrectJeffrey, answerCorrectSix,
+                 answerCorrectTwo, answerCorrect32292,
                 answerCorrectNba,
                 answerCorrectSch, answerCorrectR);
 
         String answerQuizPlayer = finalAnswerForQuizPlayer(cAnswer, nameOfQuizPlayer);
         displayAnswer(answerQuizPlayer);
+        Toast.makeText(this, answerQuizPlayer, Toast.LENGTH_LONG).show();
     }
 
-    private int calculateCorrectAnswers (boolean addWrong1962, boolean addCorrect1963, boolean addWrong1964,
-                                         boolean addCorrect1984, boolean addWrong1985, boolean addWrong1986,
-                                         boolean addCorrectHornets, boolean addWrongGrizzlies, boolean addWrongBucks,
-                                         boolean addWrongJames, boolean addCorrectJeffrey, boolean addWrongJohn,
-                                         boolean addWrongOne, boolean addCorrectTwo, boolean addWrongThree,
-                                         boolean addWrongFour, boolean addCorrectSix, boolean addWrongEight,
-                                         boolean addWrong28485, boolean addWrong30763, boolean addCorrect32292,
+    private int calculateCorrectAnswers ( boolean addCorrect1963, boolean addCorrect1984,
+                                          boolean addCorrectHornets, boolean addCorrectJeffrey,
+                                          boolean addCorrectTwo, boolean addCorrectSix, boolean addCorrect32292,
                                          boolean addCorrectNba,
                                          boolean addCorrectSch, boolean addCorrectR){
         int correctAnswer = 0;
@@ -183,9 +177,9 @@ public class MainActivity extends AppCompatActivity {
         return answer;
     }
 
-    public void displayAnswer (String answer){
+    public void displayAnswer (String sting){
         TextView yourScore = (TextView) findViewById(R.id.your_score);
-        yourScore.setText(answer);
+        yourScore.setText("Thank you for your time!");
     }
 
     public void onPressed(View view){
