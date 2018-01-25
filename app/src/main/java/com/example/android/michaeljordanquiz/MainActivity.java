@@ -124,6 +124,9 @@ public class MainActivity extends AppCompatActivity {
         if (addCorrect32292){
             correctAnswer += 1;
         }
+        else if (!addCorrectNba){
+            correctAnswer= correctAnswer + 0;
+        }
         else {
             correctAnswer =0;
         }
