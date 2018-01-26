@@ -97,12 +97,6 @@ public class MainActivity extends AppCompatActivity {
                                          boolean addCorrectSch, boolean addCorrectR){
         int correctAnswer = 0;
 
-        if(addCorrectR && addCorrectSch){
-            correctAnswer += 1;
-        }
-        if (addCorrectNba){
-            correctAnswer += 1;
-        }
         if(addCorrect1963){
             correctAnswer += 1;
         }
@@ -124,11 +118,14 @@ public class MainActivity extends AppCompatActivity {
         if (addCorrect32292){
             correctAnswer += 1;
         }
-        else if (!addCorrectNba){
-            correctAnswer += 0;
+        if (addCorrectNba){
+            correctAnswer += 1;
+        }
+        if(addCorrectR && addCorrectSch){
+            correctAnswer += 1;
         }
         else {
-            correctAnswer =0;
+            correctAnswer +=0;
         }
         return correctAnswer;
     }
