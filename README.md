@@ -1,4 +1,4 @@
-# MichaelJordanQuiz
+# Michael Jordan Quiz
 
 This is stage 2 of Android Basic Nanodegree.
 
